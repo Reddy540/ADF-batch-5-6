@@ -1,0 +1,15 @@
+{
+	"name": "quant-data-factory",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "76487083-cbd0-4390-b1c3-f860ba8c31e5",
+		"tenantId": "75228a33-5ab6-4665-8524-5a218ca72fea"
+	}
+}
