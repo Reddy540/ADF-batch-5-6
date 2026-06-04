@@ -1,0 +1,27 @@
+{
+	"name": "DS_TRG_BINARY",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_GEN2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TRG_file_name": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().TRG_file_name",
+					"type": "Expression"
+				},
+				"folderPath": "Ready",
+				"fileSystem": "quant-container"
+			}
+		}
+	}
+}
