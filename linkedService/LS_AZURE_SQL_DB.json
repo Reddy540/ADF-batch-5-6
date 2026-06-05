@@ -8,10 +8,10 @@
 			"server": "quanttech.database.windows.net",
 			"database": "quantclouddb",
 			"encrypt": "mandatory",
-			"trustServerCertificate": true,
+			"trustServerCertificate": false,
 			"authenticationType": "SQL",
-			"userName": "Sreenu540",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDdERUQ3RUQyLTc3NDQtNEZDMy05OUQwLTU5OEUzMDlENjhFMF9lM2E5MjExMC1mNzEzLTRjMDgtYmYyNy1kNTY4NTc0YjYwMjQiDQp9"
+			"userName": "Sreenureddy",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDdERUQ3RUQyLTc3NDQtNEZDMy05OUQwLTU5OEUzMDlENjhFMF9kYjZhZTEzMi00ODdiLTQ0NjQtYjI1MS1iZTYyM2M2ZTk3Y2IiDQp9"
 		}
 	}
 }
