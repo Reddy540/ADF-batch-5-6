@@ -42,6 +42,12 @@
 						"referenceName": "DS_SRC_ADLS_CSV",
 						"type": "DatasetReference"
 					},
+					"logStorageSettings": {
+						"linkedServiceName": {
+							"referenceName": "LS_ADLS_GEN2",
+							"type": "LinkedServiceReference"
+						}
+					},
 					"enableLogging": true,
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
