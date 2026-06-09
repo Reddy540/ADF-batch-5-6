@@ -1,0 +1,29 @@
+{
+	"name": "EventBasedTriggerADLS",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_EVENT_BASED_MIGRATION",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"floder_path": "@triggerBody().folderpath",
+					"file_name": "@triggerBody().filename"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/quant-container/blobs/Ready/",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/c79a77b7-4e14-4674-a543-26f0d751b7d6/resourceGroups/rg-quantcloud-technologies/providers/Microsoft.Storage/storageAccounts/quantcloudtechnologies",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
