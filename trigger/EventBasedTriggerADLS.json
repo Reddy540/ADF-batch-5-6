@@ -3,18 +3,7 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
-		"pipelines": [
-			{
-				"pipelineReference": {
-					"referenceName": "PL_EVENT_BASED_MIGRATION",
-					"type": "PipelineReference"
-				},
-				"parameters": {
-					"floder_path": "@triggerBody().folderpath",
-					"file_name": "@triggerBody().filename"
-				}
-			}
-		],
+		"pipelines": [],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
 			"blobPathBeginsWith": "/quant-container/blobs/Ready/",
