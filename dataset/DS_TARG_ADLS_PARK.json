@@ -1,0 +1,29 @@
+{
+	"name": "DS_TARG_ADLS_PARK",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_GEN2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"targt_filename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().targt_filename",
+					"type": "Expression"
+				},
+				"folderPath": "sreenu Azure",
+				"fileSystem": "quant-container"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
